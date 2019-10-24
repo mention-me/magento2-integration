@@ -1,0 +1,22 @@
+{
+    "name": "mentionme/module-mention-me",
+    "description": "MentionMe Magento2 Module",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+    },
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "app/code/MentionMe/MentionMe/registration.php"
+        ],
+        "psr-4": {
+            "MentionMe\\MentionMe\\": "app/code/MentionMe/MentionMe/"
+        }
+    }
+}

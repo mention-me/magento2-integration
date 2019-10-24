@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" label="Customer My Account (All Pages)" design_abstraction="custom">
+    <body>
+        <referenceBlock name="customer_account_navigation">
+            <!--
+            /**
+            * Can't use Magento\Customer\Block\Account\SortLinkInterface here as incompatible with Magento 2.1.x
+            */
+            -->
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-account-navigation-mentionme-dashboard" ifconfig="mentionme_mentionme/dashboard/enabled">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Mention Me Dashboard</argument>
+                    <argument name="path" xsi:type="string">mention-me/dashboard</argument>
+                    <argument name="sortOrder" xsi:type="number">1</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

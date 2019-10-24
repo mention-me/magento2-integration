@@ -1,0 +1,11 @@
+<?php /** @var MentionMe\MentionMe\Block\Widget\LandingPage $block */ ?>
+
+<?php if ($block->isEnabled()) : ?>
+    <!-- Begin MentionMe LandingPage placeholder -->
+    <div id="mmWrapper"></div>
+    <!-- End MentionMe LandingPage placeholder -->
+
+    <!-- Begin Mention Me LandingPage script -->
+    <script type="text/javascript" src="<?= $block->escapeUrl($block->getLandingPageUrl()) ?>"></script>
+    <!-- End Mention Me LandingPage script -->
+<?php endif; ?>

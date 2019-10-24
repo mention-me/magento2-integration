@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <mentionme_mentionme>
+            <general>
+                <enabled>1</enabled>
+                <api_mode>demo</api_mode>
+            </general>
+            <dashboard>
+                <enabled>1</enabled>
+            </dashboard>
+            <referrer_integration>
+                <enabled>1</enabled>
+            </referrer_integration>
+            <referee_integration>
+                <enabled>1</enabled>
+                <position>after_sidebar_summary_items</position>
+            </referee_integration>
+            <homepage_conversion_message>
+                <enabled>1</enabled>
+                <position>content.top</position>
+            </homepage_conversion_message>
+            <product_conversion_message>
+                <enabled>1</enabled>
+                <position>product.info.extrahint</position>
+            </product_conversion_message>
+            <landing_pages>
+                <enabled>1</enabled>
+            </landing_pages>
+        </mentionme_mentionme>
+    </default>
+</config>

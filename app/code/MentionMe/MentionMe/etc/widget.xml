@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="mentionme_landing_page"
+            class="MentionMe\MentionMe\Block\Widget\LandingPage"
+            is_email_compatible="false"
+            placeholder_image="MentionMe_MentionMe::images/mentionme_landing_page.png">
+        <label translate="true">MentionMe Landing Page</label>
+        <description translate="true">
+            When promoting your refer-a-friend programme, you are likely to want to lead your customers to landing pages
+            on your site which include various pieces of Mention Me functionality. If you send out emails with a referral
+            call to action you can direct your customers to a landing page on your own site. Create that page and embed
+            on it a referrer offer tag.
+        </description>
+        <parameters>
+            <parameter name="situation" xsi:type="text" visible="true">
+                <label translate="true">Situation</label>
+                <description translate="true">
+                    String indicator of where you are including this tag within your site (for example: checkout,
+                    postpurchase, landingpage). Used for reporting. Can contain only letters, numbers, spaces,
+                    underscores and dashes.
+                </description>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

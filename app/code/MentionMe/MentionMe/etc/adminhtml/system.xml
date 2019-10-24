@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mentionme" translate="label" sortOrder="300">
+            <label>Mention Me</label>
+        </tab>
+        <section id="mentionme_mentionme" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <class>separator-top</class>
+            <label>Mention Me</label>
+            <tab>mentionme</tab>
+            <resource>MentionMe_MentionMe::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1">
+                <label>General</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="account_code" translate="label" type="text" sortOrder="20" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Account Code</label>
+                </field>
+                <field id="api_mode" translate="label" type="select" sortOrder="30" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Api Mode</label>
+                    <source_model>MentionMe\MentionMe\Model\Config\Source\ApiMode</source_model>
+                </field>
+            </group>
+            <group id="dashboard" translate="label" type="text" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1">
+                <label>Dashboard</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+            </group>
+            <group id="referrer_integration" translate="label" type="text" sortOrder="30" showInWebsite="1" showInStore="1" showInDefault="1">
+                <label>Referrer Integration</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+            </group>
+            <group id="referee_integration" translate="label" type="text" sortOrder="40" showInWebsite="1" showInStore="1" showInDefault="1">
+                <label>Referee Integration</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="position" translate="label" type="select" sortOrder="20" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Position On Page</label>
+                    <source_model>MentionMe\MentionMe\Model\Config\Source\Integration\Referee\Position</source_model>
+                </field>
+            </group>
+            <group id="homepage_conversion_message" translate="label" type="text" sortOrder="50" showInWebsite="1" showInStore="1" showInDefault="1">
+                <label>Homepage Conversion Message</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="position" translate="label" type="select" sortOrder="20" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Position On Page</label>
+                    <source_model>MentionMe\MentionMe\Model\Config\Source\Integration\Conversion\CMSPosition</source_model>
+                </field>
+            </group>
+            <group id="product_conversion_message" translate="label" type="text" sortOrder="60" showInWebsite="1" showInStore="1" showInDefault="1">
+                <label>Product Conversion Message</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="position" translate="label" type="select" sortOrder="20" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Position On Page</label>
+                    <source_model>MentionMe\MentionMe\Model\Config\Source\Integration\Conversion\ProductPosition</source_model>
+                </field>
+            </group>
+            <group id="landing_pages" translate="label" type="text" sortOrder="70" showInWebsite="1" showInStore="1" showInDefault="1">
+                <label>Landing Pages</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
