@@ -14,7 +14,7 @@ and merchants get new modules in and out of their system.
 
 - Add the mentionme/module-mention-me composer dependency to your project's composer.json as a required dependency:
 ```
-    composer require mentionme/module-mention-me --no-update`
+    composer require mentionme/module-mention-me --no-update
 ```
 
 - Update your project's composer dependencies:
@@ -24,8 +24,9 @@ and merchants get new modules in and out of their system.
 
 - Install the downloaded module via Magento's standard command line tool:
 ```
-    php bin/magento module:enable MentionMe_MentionMe`
+    php bin/magento module:enable MentionMe_MentionMe
     php bin/magento setup:upgrade
+    php bin/magento cache:flush
 ```
 
 **Installing the module manually via FTP**
@@ -38,6 +39,7 @@ and merchants get new modules in and out of their system.
 ```
     php bin/magento module:enable MentionMe_MentionMe
     php bin/magento setup:upgrade
+    php bin/magento cache:flush
 ```
 
 After completing the above steps for Composer or manual installation the MentionMe module will be installed ready for configuration. Please note, if you are
@@ -66,13 +68,20 @@ Upgrading the Module
 **Upgrading the module via Composer (recommended)**
 
 - Update the mentionme/module-mention-me composer dependency to the latest stable release in your project's composer.json
+```
     composer require mentionme/module-mention-me --no-update
+```
 
 - Update your project's composer dependencies
+```
     composer update mentionme/module-mention-me
+```
 
-- Install the updated module via Magento's standard command line tool
+- Install the updated module via Magento's standard command line tool:
+```
     php bin/magento setup:upgrade
+    php bin/magento cache:flush
+```
 
 **Upgrading the module manually via FTP**
 
@@ -80,8 +89,11 @@ Upgrading the Module
 - Ensure you completely remove the exisiting app/code/MentionMe directory
 - Copy the new "app" folder from the downloaded zip archive in to your Magento root directory.
 
-- Install the updated module via Magento's standard command line tool
+- Install the updated module via Magento's standard command line tool:
+```
     php bin/magento setup:upgrade
+    php bin/magento cache:flush
+```
 
 **Support**
 
