@@ -7,17 +7,17 @@ and merchants get new modules in and out of their system.
 
 **Installing the module via Composer (recommended)**
 
-- Add this GitHub repository to your project's composer.json as a composer repository:
+- Add this GitHub repository to your project's composer.json as a Composer source repository:
 ```
     composer config repositories.mentionme vcs https://github.com/mention-me/magento2-integration
 ```
 
-- Add the mentionme/module-mention-me composer dependency to your project's composer.json as a required dependency:
+- Add the `mentionme/module-mention-me` Composer dependency to your project's composer.json as a required dependency:
 ```
     composer require mentionme/module-mention-me --no-update
 ```
 
-- Update your project's composer dependencies:
+- Update your project's Composer dependencies:
 ```
     composer update mentionme/module-mention-me
 ```
@@ -51,15 +51,15 @@ Configuring the Module
 
 The module's configuration can be found in the Magento admin panel under Stores > Configuration > MentionMe.
 
-You will first need to add you unique account code in the Genral section of the configuration. Once this is added, the MentionMe integrations will be enabled on 
-your storefront. Depending on where the module is installed you will need to select either the Demo or Live API Mode configuration. To globally disable all of the 
+You will first need to add your unique account code in the General section of the configuration. Once this is added, the MentionMe integrations will be enabled on 
+your storefront. Depending on which site the module is installed (testing or production), you will need to select either the Demo or Live API Mode configuration. To globally disable all of the 
 integrations at any time change the General setting for "Enabled" to the "Disabled" value.
 
 Each seperate integration then has its own section of configuration, allowing you to enable or disable each integration individually.
 
-The Referee and Conversion Message integrations have an additional configuration to select where on the page the MentionMe content will display. The dropdown of options
-is based on the available layout containers for your theme. This allows you to select an existing container from the base theme or add a new container in your theme especially 
-for placing the MentionMe content. Alternatively you may want to add the MentionMe placeholder html directly in to your theme's templates, to do this select the 
+The Referee and Conversion Message integrations also have an additional configuration to select where on the page the MentionMe content will display. The dropdown of position options
+is based on the available layout containers within your theme. This allows you to select an existing container from the base theme or pick a custom container you have added to your theme especially 
+for placing the MentionMe content. Alternatively you may want to add the MentionMe placeholder html directly in to ome of your theme's templates, to do this select the 
 "I will manually add the tag" option, which will prevent the module from automatically adding the content.
 
 Upgrading the Module
@@ -67,12 +67,12 @@ Upgrading the Module
 
 **Upgrading the module via Composer (recommended)**
 
-- Update the mentionme/module-mention-me composer dependency to the latest stable release in your project's composer.json
+- Update the `mentionme/module-mention-me` Composer dependency to the latest stable release in your project's composer.json
 ```
     composer require mentionme/module-mention-me --no-update
 ```
 
-- Update your project's composer dependencies
+- Update your project's Composer dependencies
 ```
     composer update mentionme/module-mention-me
 ```
