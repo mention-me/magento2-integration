@@ -13,7 +13,6 @@ use MentionMe\MentionMe\Helper\Theme as ThemeHelper;
 class ProductPosition implements ArrayInterface
 {
     const POSITION_MANUAL = 'manual';
-    const POSITION_ADDTOCART = 'product.info.addtocart';
 
     /** @var ProcessorFactory */
     private $layoutProcessorFactory;
@@ -44,8 +43,7 @@ class ProductPosition implements ArrayInterface
     private function getPositions()
     {
         $positions = [
-            self::POSITION_MANUAL => __(' I will manually add the tag to my product page'),
-            self::POSITION_ADDTOCART => __('Product Add To Cart')
+            self::POSITION_MANUAL => __(' I will manually add the tag to my product page')
         ];
 
         $theme = $this->themeHelper->getThemeForAdminContext();
