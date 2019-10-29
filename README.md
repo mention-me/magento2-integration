@@ -95,6 +95,32 @@ Upgrading the Module
     php bin/magento cache:flush
 ```
 
+Removing the Module
+--------------------
+
+**Remove the module via Composer (recommended)**
+
+- Remove the `mentionme/module-mention-me` Composer dependency:
+```
+    composer remove mentionme/module-mention-me
+```
+
+- Inform Magento of the removal with the standard command line tool:
+```
+    php bin/magento setup:upgrade
+    php bin/magento cache:flush
+```
+
+**Remove the module manually via FTP**
+
+- Delete the "app/code/MentionMe" folder from your Magento root directory.
+
+- Inform Magento of the removal with the standard command line tool:
+```
+    php bin/magento setup:upgrade
+    php bin/magento cache:flush
+```
+
 **Support**
 
 *Important: As with installing any new software on your system, don't forget to take appropriate backup steps, and to test your release in a 
