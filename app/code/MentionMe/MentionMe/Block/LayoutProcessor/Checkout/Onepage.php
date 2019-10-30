@@ -37,6 +37,11 @@ class Onepage implements LayoutProcessorInterface
      */
     public function process($jsLayout)
     {
+        // Only continue if this integration is enabled
+        if ($this->dataHelper->getRefereeEnabled() == false) {
+            return $jsLayout;
+        }
+
         // phpcs:disable Magento2.Files.LineLength.MaxExceeded
         switch ($this->dataHelper->getRefereeIntegrationPosition()) {
             case Position::ABOVE_PROGRESS_BAR:
