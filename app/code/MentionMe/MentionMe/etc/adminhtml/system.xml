@@ -17,10 +17,10 @@
                     <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
                 </field>
                 <field id="account_code" translate="label" type="text" sortOrder="20" showInDefault="1" showInStore="1" showInWebsite="1">
-                    <label>Account Code</label>
+                    <label>Merchant Partner Code</label>
                 </field>
                 <field id="api_mode" translate="label" type="select" sortOrder="30" showInDefault="1" showInStore="1" showInWebsite="1">
-                    <label>Api Mode</label>
+                    <label>Environment</label>
                     <source_model>MentionMe\MentionMe\Model\Config\Source\ApiMode</source_model>
                 </field>
             </group>

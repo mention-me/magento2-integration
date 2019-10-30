@@ -22,7 +22,7 @@ class Position implements ArrayInterface
     const AFTER_PAYMENT_METHODS              = 'after_payment_methods';
 
     const POSTIONS = [
-        self::MANUAL => 'I will manually add the tag to my checkout page',
+        self::MANUAL => ' I will choose where to place the tag manually',
         self::ABOVE_PROGRESS_BAR => 'Above Progress bar',
         self::BELOW_PROGRESS_BAR => 'Below Progress Bar',
         self::BEFORE_EMAIL_ADDRESS => 'Before Email Address',

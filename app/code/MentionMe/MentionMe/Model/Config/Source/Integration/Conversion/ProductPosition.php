@@ -43,7 +43,7 @@ class ProductPosition implements ArrayInterface
     private function getPositions()
     {
         $positions = [
-            self::POSITION_MANUAL => __(' I will manually add the tag to my product page')
+            self::POSITION_MANUAL => __(' I will choose where to place the tag manually')
         ];
 
         $theme = $this->themeHelper->getThemeForAdminContext();
