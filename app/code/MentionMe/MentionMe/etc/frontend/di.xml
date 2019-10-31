@@ -23,4 +23,8 @@
     <type name="Magento\Checkout\Controller\Onepage\Success">
         <plugin name="mentionme_referrer" type="MentionMe\MentionMe\Plugin\Magento\Checkout\Controller\Onepage\SuccessPlugin" sortOrder="10"/>
     </type>
+
+    <type name="Magento\Framework\View\Layout\ConfigCondition">
+        <plugin name="mentionme_dashboard_nav_visible" type="MentionMe\MentionMe\Plugin\Magento\Framework\View\Layout\ConfigConditionPlugin" sortOrder="1" />
+    </type>
 </config>
