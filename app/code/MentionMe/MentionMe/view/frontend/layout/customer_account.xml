@@ -9,7 +9,7 @@
             -->
             <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-account-navigation-mentionme-dashboard" ifconfig="mentionme_mentionme/dashboard/enabled">
                 <arguments>
-                    <argument name="label" xsi:type="string" translate="true">Mention Me Dashboard</argument>
+                    <argument name="label" xsi:type="string" translate="true">Refer a Friend</argument>
                     <argument name="path" xsi:type="string">mention-me/dashboard</argument>
                     <argument name="sortOrder" xsi:type="number">1</argument>
                 </arguments>
