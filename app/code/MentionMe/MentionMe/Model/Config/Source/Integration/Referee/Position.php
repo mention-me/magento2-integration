@@ -32,7 +32,7 @@ class Position implements ArrayInterface
         self::BEFORE_SHIPPING_METHOD_LIST => 'Before Shipping Method List',
         self::BEFORE_PAYMENT_METHODS => 'Before Payment Methods',
         self::AFTER_PAYMENT_METHODS_LIST => 'After Payment Methods List',
-        self::AFTER_PAYMENT_METHODS => 'After Payment Methods',
+        self::AFTER_PAYMENT_METHODS => 'After Discount Code',
         self::BEFORE_SIDEBAR => 'Before Sidebar',
         self::AFTER_SIDEBAR_SUMMARY_ITEMS => 'After Sidebar Summary Items',
         self::AFTER_SIDEBAR_SHIPPING_INFORMATION => 'After Sidebar Shipping Information',
