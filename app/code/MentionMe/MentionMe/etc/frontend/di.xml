@@ -5,9 +5,7 @@
     <type name="Magento\Checkout\Block\Onepage">
         <arguments>
             <argument name="layoutProcessors" xsi:type="array">
-                <item name="mentionme_referee_checkout" xsi:type="object">
-                    \MentionMe\MentionMe\Block\LayoutProcessor\Checkout\Onepage
-                </item>
+                <item name="mentionme_referee_checkout" xsi:type="object">MentionMe\MentionMe\Block\LayoutProcessor\Checkout\Onepage</item>
             </argument>
         </arguments>
     </type>
