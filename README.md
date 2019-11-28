@@ -32,7 +32,7 @@ We recommend using Magento's PHP composer integration for the cleanest installat
     php bin/magento cache:flush
 ```
 
-[insert video - in google drive]
+[![Composer Install](https://i.ibb.co/Nmq3qMX/https-drive-google.jpg)](https://drive.google.com/file/d/1V8trUTrWVPBJN-wfAdfyhsHgjz2j0EVq/view?usp=sharing "Composer Install")
 
 **Installing the module manually via FTP**
 
@@ -47,7 +47,7 @@ We recommend using Magento's PHP composer integration for the cleanest installat
     php bin/magento cache:flush
 ```
 
-[insert video - in google drive]
+[![FTP Install](https://i.ibb.co/zNYqXmk/https-drive-google.jpg)](https://drive.google.com/file/d/1WFSCMX0w5K8t_VdgKibP7r1Mg7DMY3vp/view?usp=sharing "FTP Install")
 
 After completing the above steps for Composer or manual installation the Mention Me module will be installed ready for configuration. 
 
@@ -126,7 +126,7 @@ Add via Widget With Layout:
 - Using the Layout Update section, specify on which page and within which container the landing page should show (e.g. the CMS homepage, main content area, etc).
 - Send your Mention Me onboarding projetc manager the URL of the landing page. 
 
-[insert video from google drive]
+[![Landing pages](https://i.ibb.co/Mn9CQ2m/https-drive-google.jpg)](https://drive.google.com/file/d/11o4CMOHGfFiXuue8wpNz2e7AMoLNc5H0/view?usp=sharing "Landing pages")
 
 Saving and viewing the configuration 
 --------------------
