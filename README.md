@@ -65,13 +65,13 @@ Once you’ve installed the plugin:
 - Navigate to Stores > Configuration > locate and select the plugin “Mention Me”
 - Add the Merchant Partner Code (that your Mention Me onboarding project manager sends to you) in the General configuration section to put the integrations into effect. The integrations are enabled in the demo environment by default. 
 
-[insert image: general configuration]
+<img width="1047" alt="Screenshot 2019-11-28 at 15 32 12" src="https://user-images.githubusercontent.com/1708430/69818711-49bcef80-11f5-11ea-85f1-a9249e7211ce.png">
 
 Dashboard
 ----------------------
 This is automatically enabled. 
 
-[insert image: dashboard]
+<img width="1046" alt="Screenshot 2019-11-28 at 15 33 44" src="https://user-images.githubusercontent.com/1708430/69818710-49245900-11f5-11ea-8c65-9e11799c00da.png">
  
 Referrer
 ----------------------
@@ -88,7 +88,7 @@ The following fields will be populated when an order is placed:
 - locale (where this has been set)
 
 
-[insert image: referrer]
+<img width="1032" alt="Screenshot 2019-11-28 at 15 35 48" src="https://user-images.githubusercontent.com/1708430/69818708-49245900-11f5-11ea-952c-0dcbd6f10bff.png">
  
 Referee
 ----------------------
@@ -98,7 +98,7 @@ This is automatically enabled.
 - Select where to place the tag from the dropdown Position on Page.
 - You can use the placement option for "I choose where to place the tag manually" if you have a more customised theme installed and the default positions on page are unsuitable for your checkout. Manually place the MM wrapper inside the template files where you want the tag to be loaded. 
 
-[insert image: referee]
+<img width="1043" alt="Screenshot 2019-11-28 at 15 38 28" src="https://user-images.githubusercontent.com/1708430/69818707-49245900-11f5-11ea-9d0f-0f7a69d7ad03.png">
 
 
 Conversion Message (homepage and product)
@@ -109,7 +109,7 @@ This is automatically enabled.
 - Select where to place the tag from the dropdown Position on Page.
 - You can use the placement option for "I choose where to place the tag manually" if you have a more customised theme installed and the default positions on page are unsuitable for your checkout. Manually place the MM wrapper inside the template files where you want the tag to be loaded. 
 
-[insert image: homepage and product]
+<img width="1040" alt="Screenshot 2019-11-28 at 15 38 54" src="https://user-images.githubusercontent.com/1708430/69818706-49245900-11f5-11ea-9661-e27f199cd6fd.png">
 
 Landing Pages 
 --------------------
@@ -126,7 +126,7 @@ Add via Widget With Layout:
 - Using the Layout Update section, specify on which page and within which container the landing page should show (e.g. the CMS homepage, main content area, etc).
 - Send your Mention Me onboarding projetc manager the URL of the landing page. 
 
-[![Landing pages](https://i.ibb.co/Mn9CQ2m/https-drive-google.jpg)](https://drive.google.com/file/d/11o4CMOHGfFiXuue8wpNz2e7AMoLNc5H0/view?usp=sharing "Landing pages")
+<img width="1037" alt="Screenshot 2019-11-28 at 15 39 08" src="https://user-images.githubusercontent.com/1708430/69818705-49245900-11f5-11ea-80dd-6a9c54cb4c52.png">
 
 Saving and viewing the configuration 
 --------------------
