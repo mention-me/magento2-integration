@@ -1,9 +1,12 @@
 Installing the Module
 ------------------------
 
-While you're free to manually install the MentionMe Magento2 module (the use of the app/code folder structure supports this), we recommend using Magento's PHP 
-Composer integration for the cleanest installation option. A Magento2 project should have an associated composer.json file, and this file is how developers 
-and merchants get new modules in and out of their system.
+You can install the plugin in two ways:
+
+- Using composer (recommended)
+- From zip (downloaded from GitHub)
+
+We recommend using Magento's PHP composer integration for the cleanest installation option. A Magento2 project should have an associated composer.json file, and this file is how developers and clients get new modules in and out of their system.
 
 **Installing the module via Composer (recommended)**
 
@@ -29,6 +32,8 @@ and merchants get new modules in and out of their system.
     php bin/magento cache:flush
 ```
 
+[![Composer Install](https://i.ibb.co/Nmq3qMX/https-drive-google.jpg)](https://drive.google.com/file/d/1V8trUTrWVPBJN-wfAdfyhsHgjz2j0EVq/view?usp=sharing "Composer Install")
+
 **Installing the module manually via FTP**
 
 - Click "clone or download" above and select "Download ZIP".
@@ -42,25 +47,101 @@ and merchants get new modules in and out of their system.
     php bin/magento cache:flush
 ```
 
-After completing the above steps for Composer or manual installation the MentionMe module will be installed ready for configuration. Please note, if you are
+[![FTP Install](https://i.ibb.co/zNYqXmk/https-drive-google.jpg)](https://drive.google.com/file/d/1WFSCMX0w5K8t_VdgKibP7r1Mg7DMY3vp/view?usp=sharing "FTP Install")
+
+After completing the above steps for Composer or manual installation the Mention Me module will be installed ready for configuration. 
+
+Please note, if you are
 running PHP OPcache on your server and have configured it not to clear automatically then you will need to clear the OPcache in order for the new module to become 
 available after the above steps.
 
-Configuring the Module
+
+Configuring the integrations 
 ----------------------
 
-The module's configuration can be found in the Magento admin panel under Stores > Configuration > MentionMe.
+The plugin is compatible with the latest versions of the Magento platform: 2.1.18, 2.2.9, 2.3.x
 
-You will first need to add your unique account code in the General section of the configuration. Once this is added, the MentionMe integrations will be enabled on 
-your storefront. Depending on which site the module is installed (testing or production), you will need to select either the Demo or Live API Mode configuration. To globally disable all of the 
-integrations at any time change the General setting for "Enabled" to the "Disabled" value.
+Once you’ve installed the plugin:
+- Navigate to Stores > Configuration > locate and select the plugin “Mention Me”
+- Add the Merchant Partner Code (that your Mention Me onboarding project manager sends to you) in the General configuration section to put the integrations into effect. The integrations are enabled in the demo environment by default. 
 
-Each seperate integration then has its own section of configuration, allowing you to enable or disable each integration individually.
+<img width="1047" alt="Screenshot 2019-11-28 at 15 32 12" src="https://user-images.githubusercontent.com/1708430/69818711-49bcef80-11f5-11ea-85f1-a9249e7211ce.png">
 
-The Referee and Conversion Message integrations also have an additional configuration to select where on the page the MentionMe content will display. The dropdown of position options
-is based on the available layout containers within your theme. This allows you to select an existing container from the base theme or pick a custom container you have added to your theme especially 
-for placing the MentionMe content. Alternatively you may want to add the MentionMe placeholder html directly in to ome of your theme's templates, to do this select the 
-"I will manually add the tag" option, which will prevent the module from automatically adding the content.
+Dashboard
+----------------------
+This is automatically enabled. 
+
+<img width="1046" alt="Screenshot 2019-11-28 at 15 33 44" src="https://user-images.githubusercontent.com/1708430/69818710-49245900-11f5-11ea-8c65-9e11799c00da.png">
+ 
+Referrer
+----------------------
+
+This is automatically enabled. 
+
+The following fields will be populated when an order is placed: 
+- firstname 
+- surname
+- customer email 
+- order_number 
+- order_total (the net total amount, excluding tax and shipping) 
+- order_currency 
+- locale (where this has been set)
+
+
+<img width="1032" alt="Screenshot 2019-11-28 at 15 35 48" src="https://user-images.githubusercontent.com/1708430/69818708-49245900-11f5-11ea-952c-0dcbd6f10bff.png">
+ 
+Referee
+----------------------
+
+This is automatically enabled. 
+
+- Select where to place the tag from the dropdown Position on Page.
+- You can use the placement option for "I will choose where to place the tag manually" if you have a more customised theme installed and the default positions on page are unsuitable for your checkout. Manually place the MM wrapper inside the template files where you want the tag to be loaded. 
+
+<img width="1043" alt="Screenshot 2019-11-28 at 15 38 28" src="https://user-images.githubusercontent.com/1708430/69818707-49245900-11f5-11ea-9d0f-0f7a69d7ad03.png">
+
+
+Conversion Message (homepage and product)
+----------------------
+
+This is automatically enabled. 
+
+- Select where to place the tag from the dropdown Position on Page.
+- You can use the placement option for "I will choose where to place the tag manually" if you have a more customised theme installed and the default positions on page are unsuitable for your checkout. Manually place the MM wrapper inside the template files where you want the tag to be loaded. 
+
+<img width="1040" alt="Screenshot 2019-11-28 at 15 38 54" src="https://user-images.githubusercontent.com/1708430/69818706-49245900-11f5-11ea-9661-e27f199cd6fd.png">
+
+Landing Pages 
+--------------------
+
+This integration is automatically enabled. It’s a native Magento widget that sits among many other types of widgets in the dropdown options for clients to select and configure. It’s already built into Magento and allows you to manage Landing Page widgets and place them anywhere within your site.
+ 
+Add via Widget With Layout:
+- Navigate to Content > Widgets.
+- Click Add Widget in the top right of the screen.
+- Choose MentionMe Landing Page as the type and your design theme.
+- Click Continue.
+- Give the widget a title and select the stores it  should trigger.
+- Under the Widget Options tab, specify the situation parameter of the landing page.  
+- Using the Layout Update section, specify on which page and within which container the landing page should show (e.g. the CMS homepage, main content area, etc).
+- Send your Mention Me onboarding projetc manager the URL of the landing page. 
+
+<img width="1037" alt="Screenshot 2019-11-28 at 15 39 08" src="https://user-images.githubusercontent.com/1708430/69818705-49245900-11f5-11ea-80dd-6a9c54cb4c52.png">
+
+Saving and viewing the configuration 
+--------------------
+
+You can see the effect of each placement on the customer side by saving the configuration then following prompts to flush your cache. 
+
+<img width="1520" alt="Screenshot 2019-11-28 at 16 11 38" src="https://user-images.githubusercontent.com/1708430/69820790-d669ac80-11f9-11ea-94af-6f2ff5f35680.png">
+<img width="1521" alt="Screenshot 2019-11-28 at 16 11 55" src="https://user-images.githubusercontent.com/1708430/69820789-d669ac80-11f9-11ea-8406-e0eba80af3ab.png">
+
+
+Once you’ve done this, clients can click on Customer View to see what specific tags look like for your customers. This will open into a view of the website where you can check enabled tags are in place. 
+
+<img width="1395" alt="Screenshot 2019-11-28 at 16 16 28" src="https://user-images.githubusercontent.com/1708430/69821094-97882680-11fa-11ea-9a2a-c58d19496506.png">
+<img width="1276" alt="Screenshot 2019-11-28 at 16 17 20" src="https://user-images.githubusercontent.com/1708430/69821093-97882680-11fa-11ea-972a-5b54c24cefee.png">
+
 
 Upgrading the Module
 --------------------
@@ -125,5 +206,3 @@ Removing the Module
 
 *Important: As with installing any new software on your system, don't forget to take appropriate backup steps, and to test your release in a 
 development or staging environment before deploying to production.*
-
-If you have any concerns or questions, please send an email to clientsuccess@mention-me.com with all the relevant details that are needed to investigate or resolve the issue.
