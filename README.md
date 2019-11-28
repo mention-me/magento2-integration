@@ -32,8 +32,7 @@ We recommend using Magento's PHP composer integration for the cleanest installat
     php bin/magento cache:flush
 ```
 
-[insert image: general configuration]
-
+[insert video - in google drive]
 
 **Installing the module manually via FTP**
 
@@ -48,40 +47,99 @@ We recommend using Magento's PHP composer integration for the cleanest installat
     php bin/magento cache:flush
 ```
 
-After completing the above steps for Composer or manual installation the MentionMe module will be installed ready for configuration. 
+[insert video - in google drive]
+
+After completing the above steps for Composer or manual installation the Mention Me module will be installed ready for configuration. 
 
 Please note, if you are
 running PHP OPcache on your server and have configured it not to clear automatically then you will need to clear the OPcache in order for the new module to become 
 available after the above steps.
 
-Enbaling the integrations 
+
+Configuring the integrations 
 ----------------------
 
 The plugin is compatible with the latest versions of the Magento platform: 2.1.18, 2.2.9, 2.3.x
 
 Once you’ve installed the plugin:
 - Navigate to Stores > Configuration > locate and select the plugin “Mention Me”
-- Add the Merchant Partner Code in the General configuration section to put the integrations into effect. The integrations are enabled in the demo environment by default. 
+- Add the Merchant Partner Code (that your Mention Me onboarding project manager sends to you) in the General configuration section to put the integrations into effect. The integrations are enabled in the demo environment by default. 
+
+[insert image: general configuration]
+
+Dashboard
+----------------------
+This is automatically enabled. 
+
+[insert image: dashboard]
+ 
+Referrer
+----------------------
+
+This is automatically enabled. 
+
+The following fields will be populated when an order is placed: 
+- firstname 
+- surname
+- customer email 
+- order_number 
+- order_total (the net total amount, excluding tax and shipping) 
+- order_currency 
+- locale (where this has been set)
 
 
+[insert image: referrer]
+ 
+Referee
+----------------------
+
+This is automatically enabled. 
+
+- Select where to place the tag from the dropdown Position on Page.
+- You can use the placement option for "I choose where to place the tag manually" if you have a more customised theme installed and the default positions on page are unsuitable for your checkout. Manually place the MM wrapper inside the template files where you want the tag to be loaded. 
+
+[insert image: referee]
 
 
+Conversion Message (homepage and product)
+----------------------
+
+This is automatically enabled. 
+
+- Select where to place the tag from the dropdown Position on Page.
+- You can use the placement option for "I choose where to place the tag manually" if you have a more customised theme installed and the default positions on page are unsuitable for your checkout. Manually place the MM wrapper inside the template files where you want the tag to be loaded. 
+
+[insert image: homepage and product]
+
+Landing Pages 
+--------------------
+
+This integration is automatically enabled. It’s a native Magento widget that sits among many other types of widgets in the dropdown options for clients to select and configure. It’s already built into Magento and allows you to manage Landing Page widgets and place them anywhere within their site.
+ 
+Add via Widget With Layout:
+- Navigate to Content > Widgets.
+- Click Add Widget in the top right of the screen.
+- Choose MentionMe Landing Page as the type and your design theme.
+- Click Continue.
+- Give the widget a title and select the stores it  should trigger.
+- Under the Widget Options tab, specify the situation parameter of the landing page.  
+- Using the Layout Update section, specify on which page and within which container the landing page should show (e.g. the CMS homepage, main content area, etc).
+- Send your Mention Me onboarding projetc manager the URL of the landing page. 
+
+[insert video from google drive]
+
+Saving and viewing the configuration 
+--------------------
+
+You can see the effect of each placement on the customer side by saving the configuration then following prompts to flush your cache. 
+
+[insert pics: configuration and cache management] 
 
 
+Once you’ve done this, clients can click on Customer View to see what specific tags look like for your customers. This will open into a view of the website where you can check enabled tags are in place. 
 
+[insert pics: customer view and customer view site]
 
-The module's configuration can be found in the Magento admin panel under Stores > Configuration > MentionMe.
-
-You will first need to add your unique account code in the General section of the configuration. Once this is added, the MentionMe integrations will be enabled on 
-your storefront. Depending on which site the module is installed (testing or production), you will need to select either the Demo or Live API Mode configuration. To globally disable all of the 
-integrations at any time change the General setting for "Enabled" to the "Disabled" value.
-
-Each seperate integration then has its own section of configuration, allowing you to enable or disable each integration individually.
-
-The Referee and Conversion Message integrations also have an additional configuration to select where on the page the MentionMe content will display. The dropdown of position options
-is based on the available layout containers within your theme. This allows you to select an existing container from the base theme or pick a custom container you have added to your theme especially 
-for placing the MentionMe content. Alternatively you may want to add the MentionMe placeholder html directly in to ome of your theme's templates, to do this select the 
-"I will manually add the tag" option, which will prevent the module from automatically adding the content.
 
 Upgrading the Module
 --------------------
@@ -146,5 +204,3 @@ Removing the Module
 
 *Important: As with installing any new software on your system, don't forget to take appropriate backup steps, and to test your release in a 
 development or staging environment before deploying to production.*
-
-If you have any concerns or questions, please send an email to clientsuccess@mention-me.com with all the relevant details that are needed to investigate or resolve the issue.
