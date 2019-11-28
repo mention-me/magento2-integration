@@ -96,7 +96,7 @@ Referee
 This is automatically enabled. 
 
 - Select where to place the tag from the dropdown Position on Page.
-- You can use the placement option for "I choose where to place the tag manually" if you have a more customised theme installed and the default positions on page are unsuitable for your checkout. Manually place the MM wrapper inside the template files where you want the tag to be loaded. 
+- You can use the placement option for "I will choose where to place the tag manually" if you have a more customised theme installed and the default positions on page are unsuitable for your checkout. Manually place the MM wrapper inside the template files where you want the tag to be loaded. 
 
 <img width="1043" alt="Screenshot 2019-11-28 at 15 38 28" src="https://user-images.githubusercontent.com/1708430/69818707-49245900-11f5-11ea-9d0f-0f7a69d7ad03.png">
 
@@ -107,7 +107,7 @@ Conversion Message (homepage and product)
 This is automatically enabled. 
 
 - Select where to place the tag from the dropdown Position on Page.
-- You can use the placement option for "I choose where to place the tag manually" if you have a more customised theme installed and the default positions on page are unsuitable for your checkout. Manually place the MM wrapper inside the template files where you want the tag to be loaded. 
+- You can use the placement option for "I will choose where to place the tag manually" if you have a more customised theme installed and the default positions on page are unsuitable for your checkout. Manually place the MM wrapper inside the template files where you want the tag to be loaded. 
 
 <img width="1040" alt="Screenshot 2019-11-28 at 15 38 54" src="https://user-images.githubusercontent.com/1708430/69818706-49245900-11f5-11ea-9661-e27f199cd6fd.png">
 
