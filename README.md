@@ -133,12 +133,14 @@ Saving and viewing the configuration
 
 You can see the effect of each placement on the customer side by saving the configuration then following prompts to flush your cache. 
 
-[insert pics: configuration and cache management] 
+<img width="1520" alt="Screenshot 2019-11-28 at 16 11 38" src="https://user-images.githubusercontent.com/1708430/69820790-d669ac80-11f9-11ea-94af-6f2ff5f35680.png">
+<img width="1521" alt="Screenshot 2019-11-28 at 16 11 55" src="https://user-images.githubusercontent.com/1708430/69820789-d669ac80-11f9-11ea-8406-e0eba80af3ab.png">
 
 
 Once you’ve done this, clients can click on Customer View to see what specific tags look like for your customers. This will open into a view of the website where you can check enabled tags are in place. 
 
-[insert pics: customer view and customer view site]
+<img width="1395" alt="Screenshot 2019-11-28 at 16 16 28" src="https://user-images.githubusercontent.com/1708430/69821094-97882680-11fa-11ea-9a2a-c58d19496506.png">
+<img width="1276" alt="Screenshot 2019-11-28 at 16 17 20" src="https://user-images.githubusercontent.com/1708430/69821093-97882680-11fa-11ea-972a-5b54c24cefee.png">
 
 
 Upgrading the Module
