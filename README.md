@@ -1,9 +1,12 @@
 Installing the Module
 ------------------------
 
-While you're free to manually install the MentionMe Magento2 module (the use of the app/code folder structure supports this), we recommend using Magento's PHP 
-Composer integration for the cleanest installation option. A Magento2 project should have an associated composer.json file, and this file is how developers 
-and merchants get new modules in and out of their system.
+You can install the plugin in two ways:
+
+- Using composer (recommended)
+- From zip (downloaded from GitHub)
+
+We recommend using Magento's PHP composer integration for the cleanest installation option. A Magento2 project should have an associated composer.json file, and this file is how developers and clients get new modules in and out of their system.
 
 **Installing the module via Composer (recommended)**
 
@@ -29,6 +32,9 @@ and merchants get new modules in and out of their system.
     php bin/magento cache:flush
 ```
 
+[insert image: general configuration]
+
+
 **Installing the module manually via FTP**
 
 - Click "clone or download" above and select "Download ZIP".
@@ -42,12 +48,27 @@ and merchants get new modules in and out of their system.
     php bin/magento cache:flush
 ```
 
-After completing the above steps for Composer or manual installation the MentionMe module will be installed ready for configuration. Please note, if you are
+After completing the above steps for Composer or manual installation the MentionMe module will be installed ready for configuration. 
+
+Please note, if you are
 running PHP OPcache on your server and have configured it not to clear automatically then you will need to clear the OPcache in order for the new module to become 
 available after the above steps.
 
-Configuring the Module
+Enbaling the integrations 
 ----------------------
+
+The plugin is compatible with the latest versions of the Magento platform: 2.1.18, 2.2.9, 2.3.x
+
+Once you’ve installed the plugin:
+- Navigate to Stores > Configuration > locate and select the plugin “Mention Me”
+- Add the Merchant Partner Code in the General configuration section to put the integrations into effect. The integrations are enabled in the demo environment by default. 
+
+
+
+
+
+
+
 
 The module's configuration can be found in the Magento admin panel under Stores > Configuration > MentionMe.
 
