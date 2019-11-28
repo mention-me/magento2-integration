@@ -114,7 +114,7 @@ This is automatically enabled.
 Landing Pages 
 --------------------
 
-This integration is automatically enabled. It’s a native Magento widget that sits among many other types of widgets in the dropdown options for clients to select and configure. It’s already built into Magento and allows you to manage Landing Page widgets and place them anywhere within their site.
+This integration is automatically enabled. It’s a native Magento widget that sits among many other types of widgets in the dropdown options for clients to select and configure. It’s already built into Magento and allows you to manage Landing Page widgets and place them anywhere within your site.
  
 Add via Widget With Layout:
 - Navigate to Content > Widgets.
