@@ -19,8 +19,8 @@ class Referrer extends AbstractUrlBuilder
         $customerGroupName = $this->paramsHelper->getCustomerGroupName($order->getCustomerGroupId());
 
         return [
-            'firstname' => $order->getCustomerFirstname(),
-            'surname' => $order->getCustomerLastname(),
+            'firstname' => $order->getCustomerFirstname() ?? $order->getBillingAddress()->getFirstName(),
+            'surname' => $order->getCustomerLastname() ?? $order->getBillingAddress()->getLastName(),
             'email' => $order->getCustomerEmail(),
             'customer_id' => $order->getCustomerId(),
             'segment' => $customerGroupName,
