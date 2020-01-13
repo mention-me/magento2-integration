@@ -42,6 +42,11 @@ class IndexPlugin
      */
     public function afterExecute(Index $subject, $result)
     {
+        // Prevent adding placeholder to non CMS page result
+        if (!$result instanceof \Magento\Framework\View\Result\Page) {
+            return $result;
+        }
+
         // Only continue if this integration is enabled
         if ($this->dataHelper->getHomepageConversionMessageEnabled() == false) {
             return $result;
