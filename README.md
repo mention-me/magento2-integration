@@ -124,7 +124,7 @@ Add via Widget With Layout:
 - Give the widget a title and select the stores it  should trigger.
 - Under the Widget Options tab, specify the situation parameter of the landing page.  
 - Using the Layout Update section, specify on which page and within which container the landing page should show (e.g. the CMS homepage, main content area, etc).
-- Send your Mention Me onboarding projetc manager the URL of the landing page. 
+- Send your Mention Me onboarding project manager the URL of the landing page. 
 
 <img width="1037" alt="Screenshot 2019-11-28 at 15 39 08" src="https://user-images.githubusercontent.com/1708430/69818705-49245900-11f5-11ea-80dd-6a9c54cb4c52.png">
 
