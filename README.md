@@ -128,6 +128,8 @@ Add via Widget With Layout:
 
 <img width="1037" alt="Screenshot 2019-11-28 at 15 39 08" src="https://user-images.githubusercontent.com/1708430/69818705-49245900-11f5-11ea-80dd-6a9c54cb4c52.png">
 
+[![Landing Pages](https://user-images.githubusercontent.com/1708430/74347960-d36a6b00-4da9-11ea-91a8-3ea285374da9.png)](https://drive.google.com/open?id=11o4CMOHGfFiXuue8wpNz2e7AMoLNc5H0 "Landing Pages")
+
 Saving and viewing the configuration 
 --------------------
 
