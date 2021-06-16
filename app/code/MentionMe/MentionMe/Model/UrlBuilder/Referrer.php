@@ -28,7 +28,7 @@ class Referrer extends AbstractUrlBuilder
             'customer_id' => $order->getCustomerId(),
             'segment' => $customerGroupName,
             'order_number' => $order->getIncrementId(),
-            'order_total' => $order->getSubtotal() - abs($order->getDiscountAmount()),
+            'order_total' => $order->getSubtotal() - abs($order->getDiscountAmount()) - abs($order->getShippingAmount())- abs($order->getCustomerTaxvat()),
             'order_currency' => $order->getOrderCurrencyCode(),
             'coupon_code' => $order->getCouponCode(),
             'locale' => $this->paramsHelper->getLocale(),
