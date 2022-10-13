@@ -29,12 +29,24 @@ class Dashboard extends AbstractUrlBuilder
     {
         return [
             'locale' => $this->paramsHelper->getLocale(),
-            'situation' => self::SITUATION
+            'situation' => self::SITUATION,
+            'firstname' => $this->getCustomerFirstname(),
+            'surname' => $this->getCustomerLastname(),
         ];
     }
 
     private function getCustomerEmail()
     {
         return $this->paramsHelper->getCurrentCustomer()->getEmail();
+    }
+
+    private function getCustomerFirstName()
+    {
+        return $this->paramsHelper->getCurrentCustomer()->getFirstname();
+    }
+
+    private function getCustomerLastName()
+    {
+        return $this->paramsHelper->getCurrentCustomer()->getLastname();
     }
 }
