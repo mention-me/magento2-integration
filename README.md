@@ -10,19 +10,10 @@ We recommend using Magento's PHP composer integration for the cleanest installat
 
 **Installing the module via Composer (recommended)**
 
-- Add this GitHub repository to your project's composer.json as a Composer source repository:
-```
-    composer config repositories.mentionme vcs https://github.com/mention-me/magento2-integration
-```
-
 - Add the `mentionme/module-mention-me` Composer dependency to your project's composer.json as a required dependency:
-```
-    composer require mentionme/module-mention-me --no-update
-```
 
-- Update your project's Composer dependencies:
 ```
-    composer update mentionme/module-mention-me
+    composer require mention-me/magento2-module
 ```
 
 - Install the downloaded module via Magento's standard command line tool:
