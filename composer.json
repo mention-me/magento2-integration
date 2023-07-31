@@ -1,5 +1,5 @@
 {
-    "name": "mentionme/module-mention-me",
+    "name": "mention-me/magento2-module",
     "description": "MentionMe Magento2 Module",
     "config": {
         "sort-packages": true
