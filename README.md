@@ -199,3 +199,5 @@ Removing the Module
 
 *Important: As with installing any new software on your system, don't forget to take appropriate backup steps, and to test your release in a 
 development or staging environment before deploying to production.*
+
+Please get in touch via support@mention-me.com if you require assistance.
